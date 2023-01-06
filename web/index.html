@@ -10,15 +10,23 @@
     <main>
         <div align = "center">
           <textarea id = "text_id" placeholder="Message"></textarea>
+          <br>
           <button id = "send_message" onclick="sendMessage()">Send</button>
+          <br>
+          <text id = "textC">None</text>
         </div>
     </main>
   </body>
   <script>
     function sendMessage(){
-      console.log("Worked");
       let txt = document.getElementById("text_id");
-      let result = eel.printMessage(txt.value);
+      eel.printMessage(txt.value)(
+      function(result)
+      {
+        hrt = document.getElementById("textC");
+        hrt.innerHTML += "<br>" + result;
+      });
+      txt.value = "";
     }
   </script>
 </html>
