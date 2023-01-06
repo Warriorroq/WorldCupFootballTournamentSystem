@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Football tournament</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="eel.js"></script>
+  </head>
+  <body>
+    <main>
+        <div align = "center">
+          <textarea id = "text_id" placeholder="Message"></textarea>
+          <button id = "send_message" onclick="sendMessage()">Send</button>
+        </div>
+    </main>
+  </body>
+  <script>
+    function sendMessage(){
+      console.log("Worked");
+      let txt = document.getElementById("text_id");
+      let result = eel.printMessage(txt.value);
+    }
+  </script>
+</html>
