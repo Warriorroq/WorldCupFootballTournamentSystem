@@ -8,4 +8,4 @@ def printMessage(message):
     return message
 
 
-eel.start("index.html", size=(600, 600))
+eel.start("index.html", size=(1080, 720))

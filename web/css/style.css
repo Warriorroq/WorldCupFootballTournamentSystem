@@ -1,6 +1,145 @@
-#square {
- width: 100px;
- height: 100px;
- background-color: red;
- position: absolute;
+#tournament-net{
+    background-color: grey;
+    height: 50vw;
+    width: 80%;
+    align: center;
+    position: absolute;
+    margin-left: 7.5vw;
+}
+#group{
+    background-color: blue;
+    height: 5.4em;
+    width: 7em;
+    position: absolute;
+}
+#stage-1 #group:nth-child(1) {
+    left: 5em;
+    top: 6em;
+}
+#stage-1 #group:nth-child(2) {
+    left: 5em;
+    top:  calc(2 * 6em);
+}
+#stage-1 #group:nth-child(3) {
+    left: 5em;
+    top:  calc(3 * 6em);
+}
+#stage-1 #group:nth-child(4) {
+    left: 5em;
+    top:  calc(4 * 6em);
+}
+#stage-1 #group:nth-child(5) {
+    left: 5em;
+    top:  calc(5 * 6em);
+}
+#stage-1 #group:nth-child(6) {
+    left: 5em;
+    top:  calc(6 * 6em);
+}
+#stage-1 #group:nth-child(7) {
+    left: 5em;
+    top:  calc(7  * 6em);
+}
+#stage-1 #group:nth-child(8) {
+    left: 5em;
+    top:  calc(8 * 6em);
+}
+/* right part */
+#stage-1 #group:nth-child(9) {
+    right: 5em;
+    top: 6em;
+}
+#stage-1 #group:nth-child(10) {
+    right: 5em;
+    top:  calc(2 * 6em);
+}
+#stage-1 #group:nth-child(11) {
+    right: 5em;
+    top:  calc(3 * 6em);
+}
+#stage-1 #group:nth-child(12) {
+    right: 5em;
+    top:  calc(4 * 6em);
+}
+#stage-1 #group:nth-child(13) {
+    right: 5em;
+    top:  calc(5 * 6em);
+}
+#stage-1 #group:nth-child(14) {
+    right: 5em;
+    top:  calc(6 * 6em);
+}
+#stage-1 #group:nth-child(15) {
+    right: 5em;
+    top:  calc(7  * 6em);
+}
+#stage-1 #group:nth-child(16) {
+    right: 5em;
+    top:  calc(8 * 6em);
+}
+
+#stage-2 #group:nth-child(1) {
+    left: 20em;
+    top: 9em;
+}
+#stage-2 #group:nth-child(2) {
+    left: 20em;
+    top:  calc(2 * 9em + 3em);
+}
+#stage-2 #group:nth-child(3) {
+    left: 20em;
+    top:  calc(3 * 9em + 6em);
+}
+#stage-2 #group:nth-child(4) {
+    left: 20em;
+    top:  calc(4 * 9em + 9em);
+}
+/* right part */
+#stage-2 #group:nth-child(5) {
+    right: 20em;
+    top:  9em;
+}
+#stage-2 #group:nth-child(6) {
+    right: 20em;
+    top:  calc(2 * 9em + 3em);
+}
+#stage-2 #group:nth-child(7) {
+    right: 20em;
+    top:  calc(3  * 9em + 6em);
+}
+#stage-2 #group:nth-child(8) {
+    right: 20em;
+    top:  calc(4  * 9em + 9em);
+}
+
+#stage-3 #group:nth-child(1) {
+    left: 35em;
+    top: 15em;
+}
+#stage-3 #group:nth-child(2) {
+    left: 35em;
+    top:  39em
+}
+/* right part */
+#stage-3 #group:nth-child(3) {
+    right: 35em;
+    top:  15em;
+}
+#stage-3 #group:nth-child(4) {
+    right: 35em;
+    top:  39em
+}
+
+#stage-4 #group:nth-child(1) {
+    left: 47em;
+    top: 27em;
+}
+#stage-4 #group:nth-child(2) {
+    right: 47em;
+    top:  27em;
+}
+
+#stage-5 #group:nth-child(1) {
+    left: 60.5em;
+    top:  27em;
 }
