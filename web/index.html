@@ -95,100 +95,69 @@
         <div id = "stage-2">
             <div id = "group">
                 Group A
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
             <div id = "group">
                 Group B
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
             <div id = "group">
                 Group C
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
             <div id = "group">
                 Group D
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
 
             <div id = "group">
                 Group E
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
             <div id = "group">
                 Group F
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
             <div id = "group">
                 Group G
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
             <div id = "group">
                 Group K
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
         </div>
         <div id = "stage-3">
             <div id = "group">
                 Group A
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
             <div id = "group">
                 Group B
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
             <div id = "group">
                 Group C
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
             <div id = "group">
                 Group D
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
         </div>
         <div id = "stage-4">
             <div id = "group">
                 Group A
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
             <div id = "group">
                 Group B
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
         </div>
         <div id = "stage-5">
             <div id = "group">
                 Group A
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
-                <div  id = "team"><select name="teams" id="teams"><option value="option1">Volvo</option></select></div>
             </div>
         </div>
       </div>
     </main>
   </body>
   <script>
-    function sendMessage(){
-      let txt = document.getElementById("text_id");
-      eel.printMessage(txt.value)(
-      function(result)
-      {
-        hrt = document.getElementById("textC");
-        hrt.innerHTML += "<br>" + result;
-      });
-      txt.value = "";
-    }
+
+    const countries = {};
+    eel.readAllImages()(function(result){
+        result.forEach(element => countries[element[0]] = element[1]);
+    });    
+    console.log(countries);
+
+    const startGroups = document.getElementsById('group');
+    console.log(startGroups);
   </script>
 </html>
