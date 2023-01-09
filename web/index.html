@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Football tournament</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="eel.js"></script>
-  </head>
-  <body>
-    <main>
-      <div id = "tournament-net">
-        <div id = "stage-1">
-            <div class = "group">
-                Group A
-                <div  class = "team"><select name="teams" class="teamsSelect"></select></div>
-                <div  class = "team"><select name="teams" class="teamsSelect"></select></div>
-            </div>
-            <br><br><br><br><br>
-            <div class = "group">
-                Group B
-                <div  class = "team"><select name="teams" class="teamsSelect"></select></div>
-                <div  class = "team"><select name="teams" class="teamsSelect"></select></div>
-            </div>
-        </div>
-        </div>
-      </div>
-    </main>
-  </body>
-  <script>
-
-    const countries = {};
-    eel.readAllCountryImages()(function(result){
-        result.forEach(element => countries[element[0]] = element[1]);
-    });    
-    console.log(countries);
-
-    const startGroups = document.getElementsById('group');
-    console.log(startGroups);
-  </script>
+    <head>
+        <meta charset="UTF-8">
+        <title>Football tournament</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="eel.js"></script>
+    </head>
+        <body>
+            <main>
+                <div id = "startDiv">
+                    <input type='button' class='start' value='show' onclick='javascript:startFunc();' />
+                </div>
+                <div id = "tournament-net">
+                    <div id = "stage-1">
+                        <div class = "group">
+                            Group A
+                            <div  class = "team">
+                                <select name="teams" class="teamsSelect"></select>
+                            </div>
+                            <div  class = "team">
+                                <select name="teams" class="teamsSelect"></select>
+                            </div>
+                        </div>
+                        <br><br><br><br><br>
+                        <div class = "group">
+                            Group B
+                            <div  class = "team">
+                                <select name="teams" class="teamsSelect"></select>
+                            </div>
+                            <div  class = "team">
+                                <select name="teams" class="teamsSelect"></select>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </main>
+        </body>
+    <script>
+        const countries = new Map();
+        function startFunc(){
+            document.getElementById("startDiv").style.display = 'none';
+            loadTeams();
+        }
+        function loadTeams(){
+            const collection = document.getElementsByClassName("teamsSelect");
+            for (const selector of collection) {
+                for (let [key, value] of countries) {
+                    var opt = document.createElement('option');
+                    opt.value = key;
+                    opt.innerHTML = key;
+                    selector.appendChild(opt);
+                }
+            }
+        }        
+        eel.readAllCountryImages()(function(result){
+            result.forEach(element => countries.set(element[0], element[1]));
+        });
+    
+    </script>
 </html>
