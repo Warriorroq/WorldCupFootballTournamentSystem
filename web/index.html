@@ -16,11 +16,11 @@
                         <div class = "group">
                             Group A
                             <div  id = "team">
-                                <img src="images/country/Abkhazia.jpeg" alt="Avatar" class = "teamImg">
+                                <img src="" alt="Avatar" class = "teamImg">
                                 <select name="teams" class="teamsSelect"></select>
                             </div>
                             <div  id = "team">
-                                <img src="images/country/Abkhazia.jpeg" alt="Avatar" class = "teamImg">
+                                <img src="" alt="Avatar" class = "teamImg">
                                 <select name="teams" class="teamsSelect"></select>
                             </div>
                         </div>
@@ -28,11 +28,11 @@
                         <div class = "group">
                             Group B
                             <div  id = "team">
-                                <img src="images/country/Abkhazia.jpeg" alt="Avatar" class = "teamImg">
+                                <img src="" alt="Avatar" class = "teamImg">
                                 <select name="teams" class="teamsSelect"></select>
                             </div>
                             <div  id = "team">
-                                <img src="images/country/Abkhazia.jpeg" alt="Avatar" class = "teamImg">
+                                <img src="" alt="Avatar" class = "teamImg">
                                 <select name="teams" class="teamsSelect"></select>
                             </div>
                         </div>
@@ -52,15 +52,15 @@
             for (const team of collection) {
                 let selector = team.getElementsByClassName("teamsSelect")[0];
                 let image = team.getElementsByClassName("teamImg")[0];
+                selector.addEventListener("change", function() {
+                    image.src = countries.get(this.value);
+                });
                 for (let [key, value] of countries) {
                     var opt = document.createElement('option');
                     opt.value = key;
                     opt.innerHTML = key;
                     selector.appendChild(opt);
                 }
-                selector.addEventListener("change", function() {
-                    image.src = countries.get(this.value);
-                });
             }
         }        
         eel.readAllCountryImages()(function(result){
