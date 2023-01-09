@@ -12,3 +12,8 @@
     width: 7em;
     position: absolute;
 }
+img {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}

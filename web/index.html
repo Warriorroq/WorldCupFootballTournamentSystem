@@ -15,20 +15,24 @@
                     <div id = "stage-1">
                         <div class = "group">
                             Group A
-                            <div  class = "team">
+                            <div  id = "team">
+                                <img src="images/country/Abkhazia.jpeg" alt="Avatar" class = "teamImg">
                                 <select name="teams" class="teamsSelect"></select>
                             </div>
-                            <div  class = "team">
+                            <div  id = "team">
+                                <img src="images/country/Abkhazia.jpeg" alt="Avatar" class = "teamImg">
                                 <select name="teams" class="teamsSelect"></select>
                             </div>
                         </div>
-                        <br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br>
                         <div class = "group">
                             Group B
-                            <div  class = "team">
+                            <div  id = "team">
+                                <img src="images/country/Abkhazia.jpeg" alt="Avatar" class = "teamImg">
                                 <select name="teams" class="teamsSelect"></select>
                             </div>
-                            <div  class = "team">
+                            <div  id = "team">
+                                <img src="images/country/Abkhazia.jpeg" alt="Avatar" class = "teamImg">
                                 <select name="teams" class="teamsSelect"></select>
                             </div>
                         </div>
@@ -42,15 +46,21 @@
             document.getElementById("startDiv").style.display = 'none';
             loadTeams();
         }
+
         function loadTeams(){
-            const collection = document.getElementsByClassName("teamsSelect");
-            for (const selector of collection) {
+            const collection = document.querySelectorAll("[id=team]");
+            for (const team of collection) {
+                let selector = team.getElementsByClassName("teamsSelect")[0];
+                let image = team.getElementsByClassName("teamImg")[0];
                 for (let [key, value] of countries) {
                     var opt = document.createElement('option');
                     opt.value = key;
                     opt.innerHTML = key;
                     selector.appendChild(opt);
                 }
+                selector.addEventListener("change", function() {
+                    image.src = countries.get(this.value);
+                });
             }
         }        
         eel.readAllCountryImages()(function(result){
