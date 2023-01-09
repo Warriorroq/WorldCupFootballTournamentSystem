@@ -1,20 +1,44 @@
+<<<<<<< HEAD
+=======
+body {
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+>>>>>>> 1852dfbac51e8c5539bdb1edc2d6536ede7ece1b
 
 #tournament-net{
     background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     height: 50vw;
     width: 80%;
-    align: center;
+    text-align: center;
     position: absolute;
     margin-left: 7.5vw;
 }
 .group{
-    background-color: blue;
+    background-color: rgb(147, 147, 147);
     height: 5.4em;
     width: 7em;
-    position: absolute;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
 }
-img {
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
+
+.text1{
+    font-size: 15px;
+    text-align: center;
 }
+
+.two-blocks{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.title{
+    text-align: center;
+    color: aliceblue;
+}
+
