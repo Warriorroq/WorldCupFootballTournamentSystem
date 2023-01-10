@@ -56,6 +56,7 @@ groups = [
     FootballObj.Group.Group("Group B", teams[4:8]),
     FootballObj.Group.Group("Group C", teams[8:12]),
     FootballObj.Group.Group("Group D", teams[12:16]),
+    FootballObj.Group.Group("Group E", teams[16:20]),
     FootballObj.Group.Group("Group F", teams[20:24]),
     FootballObj.Group.Group("Group G", teams[24:28]),
     FootballObj.Group.Group("Group H", teams[28:])
