@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Football tournament</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="eel.js"></script>
+  </head>
+  <body>
+    <main>
+      <div id="tournament-net">
+        <div id="startDiv">
+          <input
+            type="button"
+            class="start"
+            value="show"
+            onclick="javascript:startFunc();"
+          />
+        </div>
+        <h2 class="title">World cup Bracket 2022</h2>
+        <div id="stage-1" class="two-blocks">
+          <div class="group">
+            <h1 class="text1">Group A</h1>
+            <div id="team" class="country_block">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+            <div id="team">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+            <div id="team">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+            <div id="team">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+          </div>
+          <div class="group">
+            <h1 class="text1">Group B</h1>
+            <div id="team">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+            <div id="team">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+            <div id="team">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+            <div id="team">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+          </div>
+          <div class="group">
+            <h1 class="text1">Group C</h1>
+            <div id="team" class="country_block">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+            <div id="team">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+            <div id="team">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+            <div id="team">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+          </div>
+          <div class="group">
+            <h1 class="text1">Group D</h1>
+            <div id="team" class="country_block">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+            <div id="team">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+            <div id="team">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+            <div id="team">
+              <img class="teamImg" />
+              <select name="teams" class="teamsSelect"></select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    const countries = new Map();
+    function startFunc() {
+      document.getElementById("startDiv").style.display = "none";
+      loadTeams();
+    }
+
+    function loadTeams() {
+      const collection = document.querySelectorAll("[id=team]");
+      for (const team of collection) {
+        let selector = team.getElementsByClassName("teamsSelect")[0];
+        let image = team.getElementsByClassName("teamImg")[0];
+        selector.addEventListener("change", function () {
+          image.src = countries.get(this.value);
+        });
+        for (let [key, value] of countries) {
+          var opt = document.createElement("option");
+          opt.value = key;
+          opt.innerHTML = key;
+          selector.appendChild(opt);
+        }
+      }
+    }
+    eel.readAllCountryImages()(function (result) {
+      result.forEach((element) => countries.set(element[0], element[1]));
+    });
+  </script>
+</html>
