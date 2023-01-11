@@ -5,8 +5,23 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     margin: 0px;
-    background: #991B4B;
+    /* background: #991B4B; */
     padding-bottom: 10%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #232fd5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* #tournament-net{
@@ -111,6 +126,24 @@ select {
     margin-top: 70px;
     margin-left: 55px;
 }
+.third_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 182px;
+    margin-left: 55px;
+}
+.four_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 244px;
+    margin-left: 55px;
+}
 
 .line{
     width: 15px;
@@ -119,6 +152,15 @@ select {
     position: absolute;
     margin-left: 305px;
     margin-top: -9px;
+}
+
+.line_country_2{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-left: 305px;
+    margin-top: 210px;
 }
 
 .line-2{
