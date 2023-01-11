@@ -1,37 +1,39 @@
-const countries = new Map();
-const teams = document.querySelectorAll("[id=team]");
+//global variables
+const teamsData = new Map();
 const globalEventAnchor = document.getElementById("global-event-anchor");
+let teamsBlocks = Array.from(document.querySelectorAll("[id=team]"), i => ["", i, i.getElementsByClassName("teamsSelect")[0], i.getElementsByClassName("teamImg")[0]]);
 
-globalEventAnchor.addEventListener("optionChange", function(){
-  console.log("changed");
-});
+//functions
+function loadData(){
+  eel.readAllCountryImages()(function (result) {
+    result.forEach((element) => teamsData.set(element[0], element[1]));
+  });
+}
+
 function startFunc() {
   document.getElementById("startDiv").style.display = "none";
   loadTeams();
 }
 
-function loadData(){
-  eel.readAllCountryImages()(function (result) {
-    result.forEach((element) => countries.set(element[0], element[1]));
-  });
-}
-
 function loadTeams() {
-  for (const team of teams) {
+  for (const team of teamsBlocks) {
 
-    let selector = team.getElementsByClassName("teamsSelect")[0];
-    let image = team.getElementsByClassName("teamImg")[0];
+    let selector = team[2];
+    let image = team[3];
 
     selector.addEventListener("change", function () {
-      image.src = countries.get(this.value);
+      image.src = teamsData.get(this.value);
       globalEventAnchor.dispatchEvent(new CustomEvent("optionChange", {
-        
+        detail: {
+          last : team[0],
+          current: this.value
+        }
       }));
-      //add last option
-      //call global event
+      team[0] = this.value;
+      //removeOptionByValue(this.value);
     });
 
-    for (let [key, value] of countries) {
+    for (let [key, value] of teamsData) {
       var opt = document.createElement("option");
       opt.value = key;
       opt.innerHTML = key;
@@ -40,17 +42,28 @@ function loadTeams() {
   }
 }
 
-function removeOptionByValue(){
-  //remove option
+function removeOptionByValue(value){
+  for (const team of teamsBlocks) {
+    let selector = team[1].getElementsByClassName("teamsSelect")[0];
+    for (var i=0; i<selectobject.length; i++) {
+      if (selectobject.options[i].value == 'A')
+        selectobject.remove(i);
+    }
+  }
 }
 
-function addOption(value, key) {
-  for (const team of teams) {
-    let selector = team.getElementsByClassName("teamsSelect")[0];
-    let image = team.getElementsByClassName("teamImg")[0];
+function addOption(value) {
+  for (const team of teamsBlocks) {
+    let selector = team[1].getElementsByClassName("teamsSelect")[0];
     var opt = document.createElement("option");
-    opt.value = key;
-    opt.innerHTML = key;
+    opt.value = value;
+    opt.innerHTML = value;
     selector.appendChild(opt);
-    }
+  }
 }
+
+//main
+globalEventAnchor.addEventListener("optionChange", function(event){
+  if(event.detail.last != "")
+    addOption(event.detail.last);
+});
