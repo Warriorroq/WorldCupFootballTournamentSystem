@@ -123,7 +123,7 @@ select {
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 70px;
+    margin-top: 69px;
     margin-left: 55px;
 }
 .third_country{
@@ -231,7 +231,7 @@ select {
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 345px;
+    margin-top: 336px;
     margin-left: -290px;
 }
 .fiveteen_country{
@@ -249,7 +249,7 @@ select {
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 385px;
+    margin-top: 378px;
     margin-left: -290px;
 }
 
@@ -263,6 +263,14 @@ select {
     position: absolute;
     margin-left: 305px;
     margin-top: -9px;
+}
+.mid_line{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 50px;
 }
 
 .line_country_2{
@@ -304,6 +312,24 @@ select {
     border-radius: 0px;
     position: absolute;
     margin-top: 54px;
+    margin-left: 856px;
+    rotate: 180deg;
+}
+.line_country_7{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 856px;
+    rotate: 180deg;
+}
+.line_country_8{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 363px;
     margin-left: 856px;
     rotate: 180deg;
 }
