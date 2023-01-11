@@ -84,3 +84,10 @@ select {
     /* margin-top: 40px;
     position: absolute; */
 }
+
+.right-grid{
+    display: grid;
+    justify-content: end;
+    margin-top: -1050px;
+    margin-right: 45px;
+}
