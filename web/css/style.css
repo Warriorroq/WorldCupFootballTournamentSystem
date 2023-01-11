@@ -213,7 +213,7 @@ select {
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 244px;
+    margin-top: 246px;
     margin-left: -290px;
 }
 .thirdteen_country{
@@ -288,6 +288,24 @@ select {
     position: absolute;
     margin-left: 305px;
     margin-top: 652px;
+}
+.line_country_5{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-left: 856px;
+    margin-top: -165px;
+    rotate: 180deg;
+}
+.line_country_6{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 54px;
+    margin-left: 856px;
+    rotate: 180deg;
 }
 
 .line-2{
