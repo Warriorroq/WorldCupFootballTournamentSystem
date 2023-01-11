@@ -126,8 +126,8 @@ select {
     border: 1px solid #00369E;
     border-radius: 0px;
     position: absolute;
-    margin-left: 305px;
-    margin-top: 57px;
+    margin-left: -1px;
+    margin-top: 105px;
 }
 
 .long-line{
