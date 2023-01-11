@@ -12,4 +12,10 @@ def readAllCountryImages():
     return images
 
 
+@eel.expose
+def readDataFromFontEnd(data):
+    print(data)
+    return
+
+
 eel.start("index.html", size=(1080, 720))

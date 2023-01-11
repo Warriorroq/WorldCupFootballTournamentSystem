@@ -1,7 +1,7 @@
 //global variables
 const teamsData = new Map();
 
-let teamsBlocks = Array.from(document.querySelectorAll("[id=team]"), i => {
+let teamsBlocks = [...document.querySelectorAll("[id=team]")].map(i => {
   var block = {
     lastValue : "",
     htmlData : i,
@@ -52,30 +52,26 @@ function createDefaultOptions(team) {
 }
 
 function removeOptionFromAllSelectorsByValue(value, teamToSkip = null){
+  let option = null;
   if(value == "")
     return;
+
   for (const team of teamsBlocks) {
     if(team == teamToSkip)
       continue;
-    for (var i=0; i<team.selector.length; i++) {
-      if (team.selector.options[i].value == value)
-        team.selector.remove(i);
-    }
+    option = team.selector.querySelector(`[value="${value}"]`).style.display = "none";
   }
 }
 
 function addOptionToAllSelectors(value, teamToSkip = null) {
+  let option = null;
   if(value == "")
     return;
 
   for (const team of teamsBlocks) {
     if(team == teamToSkip)
       continue;
-
-    var opt = document.createElement("option");
-    opt.value = value;
-    opt.innerHTML = value;
-    team.selector.appendChild(opt);
+    option = team.selector.querySelector(`[value="${value}"]`).style.display = "";
   }
 }
 
