@@ -117,6 +117,16 @@ select {
     margin-left: 55px;
 }
 
+.first_country_mid_line{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 15px;
+}
+
 .second_country{
     width: 60px;
     height: 60px;
@@ -367,4 +377,36 @@ select {
     position: absolute;
     margin-top: 52px;
     transform: rotate(90deg);
+}
+
+
+input{
+    outline: 0;
+    grid-gap: 8px;
+    align-items: center;
+    background: 0 0;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 16px;
+    gap: 8px;
+    justify-content: center;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 7px 35px;
+    margin-left: 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
+}
+
+input:hover {
+    box-shadow: 4px 4px 0 #000;
+    transform: translate(-4px,-4px);
+}
+input:focus-visible{
+    outline-offset: 1px;
 }
