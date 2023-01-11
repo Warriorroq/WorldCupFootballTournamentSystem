@@ -75,3 +75,6 @@ function addOptionToAllSelectors(value, teamToSkip = null) {
   }
 }
 
+function sendTeamsDataToPython(){
+  eel.readDataFromFontEnd(teamsBlocks.map(i => i.lastValue))();
+}
