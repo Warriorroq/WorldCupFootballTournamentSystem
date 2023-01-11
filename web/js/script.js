@@ -1,8 +1,6 @@
 //global variables
 const teamsData = new Map();
 
-const globalEventAnchor = document.getElementById("global-event-anchor");
-
 let teamsBlocks = Array.from(document.querySelectorAll("[id=team]"), i => {
   var block = {
     lastValue : "",
@@ -29,14 +27,9 @@ function loadTeams() {
   for (const team of teamsBlocks) {
     team.selector.addEventListener("change", function () {
       team.image.src = teamsData.get(this.value);
-      globalEventAnchor.dispatchEvent(new CustomEvent("optionChange", {
-        detail: {
-          last : team.lastValue,
-          current: this.value
-        }
-      }));
+      addOption(team.lastValue, team);
+      removeOptionByValue(this.value, team);
       team.lastValue = this.value;
-      //removeOptionByValue(this.value);
     });
 
     for (let [key, value] of teamsData) {
@@ -48,18 +41,27 @@ function loadTeams() {
   }
 }
 
-function removeOptionByValue(value){
+function removeOptionByValue(value, teamToSkip = null){
+  if(value == "")
+    return;
   for (const team of teamsBlocks) {
-    let selector = team[1].getElementsByClassName("teamsSelect")[0];
-    for (var i=0; i<selectobject.length; i++) {
-      if (selectobject.options[i].value == 'A')
-        selectobject.remove(i);
+    if(team == teamToSkip)
+      continue;
+    for (var i=0; i<team.selector.length; i++) {
+      if (team.selector.options[i].value == value)
+        team.selector.remove(i);
     }
   }
 }
 
-function addOption(value) {
+function addOption(value, teamToSkip = null) {
+  if(value == "")
+    return;
+
   for (const team of teamsBlocks) {
+    if(team == teamToSkip)
+      continue;
+
     var opt = document.createElement("option");
     opt.value = value;
     opt.innerHTML = value;
@@ -67,8 +69,3 @@ function addOption(value) {
   }
 }
 
-//main
-globalEventAnchor.addEventListener("optionChange", function(event){
-  if(event.detail.last != "")
-    addOption(event.detail.last);
-});
