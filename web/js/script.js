@@ -26,22 +26,32 @@ function startFunc() {
 function loadTeams() {
   for (const team of teamsBlocks) {
     team.selector.addEventListener("change", function () {
-      team.image.src = teamsData.get(this.value);
-      addOption(team.lastValue, team);
-      removeOptionByValue(this.value, team);
-      team.lastValue = this.value;
+        selectTeamFunc(team, this.value);
     });
 
-    for (let [key, value] of teamsData) {
-      var opt = document.createElement("option");
-      opt.value = key;
-      opt.innerHTML = key;
-      team.selector.appendChild(opt);
-    }
+    createDefaultOptions(team);
   }
 }
 
-function removeOptionByValue(value, teamToSkip = null){
+function selectTeamFunc(team, value) {
+  team.image.src = teamsData.get(value);
+  addOptionToAllSelectors(team.lastValue, team);
+  removeOptionFromAllSelectorsByValue(value, team);
+  team.lastValue = value;
+}
+
+function createDefaultOptions(team) {
+  var frag = document.createDocumentFragment();
+  for (let [key, value] of teamsData) {
+    var opt = document.createElement("option");
+    opt.value = key;
+    opt.innerHTML = key;
+    frag.appendChild(opt);
+  }
+  team.selector.appendChild(frag);
+}
+
+function removeOptionFromAllSelectorsByValue(value, teamToSkip = null){
   if(value == "")
     return;
   for (const team of teamsBlocks) {
@@ -54,7 +64,7 @@ function removeOptionByValue(value, teamToSkip = null){
   }
 }
 
-function addOption(value, teamToSkip = null) {
+function addOptionToAllSelectors(value, teamToSkip = null) {
   if(value == "")
     return;
 
