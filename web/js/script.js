@@ -1,7 +1,17 @@
 //global variables
 const teamsData = new Map();
+
 const globalEventAnchor = document.getElementById("global-event-anchor");
-let teamsBlocks = Array.from(document.querySelectorAll("[id=team]"), i => ["", i, i.getElementsByClassName("teamsSelect")[0], i.getElementsByClassName("teamImg")[0]]);
+
+let teamsBlocks = Array.from(document.querySelectorAll("[id=team]"), i => {
+  var block = {
+    lastValue : "",
+    htmlData : i,
+    selector : i.getElementsByClassName("teamsSelect")[0],
+    image : i.getElementsByClassName("teamImg")[0]
+  }
+  return block;
+});
 
 //functions
 function loadData(){
@@ -17,19 +27,15 @@ function startFunc() {
 
 function loadTeams() {
   for (const team of teamsBlocks) {
-
-    let selector = team[2];
-    let image = team[3];
-
-    selector.addEventListener("change", function () {
-      image.src = teamsData.get(this.value);
+    team.selector.addEventListener("change", function () {
+      team.image.src = teamsData.get(this.value);
       globalEventAnchor.dispatchEvent(new CustomEvent("optionChange", {
         detail: {
-          last : team[0],
+          last : team.lastValue,
           current: this.value
         }
       }));
-      team[0] = this.value;
+      team.lastValue = this.value;
       //removeOptionByValue(this.value);
     });
 
@@ -37,7 +43,7 @@ function loadTeams() {
       var opt = document.createElement("option");
       opt.value = key;
       opt.innerHTML = key;
-      selector.appendChild(opt);
+      team.selector.appendChild(opt);
     }
   }
 }
@@ -54,11 +60,10 @@ function removeOptionByValue(value){
 
 function addOption(value) {
   for (const team of teamsBlocks) {
-    let selector = team[1].getElementsByClassName("teamsSelect")[0];
     var opt = document.createElement("option");
     opt.value = value;
     opt.innerHTML = value;
-    selector.appendChild(opt);
+    team.selector.appendChild(opt);
   }
 }
 
