@@ -144,6 +144,117 @@ select {
     margin-top: 244px;
     margin-left: 55px;
 }
+.five_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 265px;
+    margin-left: 55px;
+}
+.six_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 329px;
+    margin-left: 55px;
+}
+.seven_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 445px;
+    margin-left: 55px;
+}
+.eight_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 372px;
+    margin-left: 55px;
+}
+.nine_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -290px;
+}
+.ten_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: -290px;
+}
+.eleven_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 182px;
+    margin-left: -290px;
+}
+.twelve_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 244px;
+    margin-left: -290px;
+}
+.thirdteen_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 270px;
+    margin-left: -290px;
+}
+.fourteen_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 345px;
+    margin-left: -290px;
+}
+.fiveteen_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: -290px;
+}
+.sixteen_country{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 385px;
+    margin-left: -290px;
+}
+
+
+
 
 .line{
     width: 15px;
@@ -162,8 +273,40 @@ select {
     margin-left: 305px;
     margin-top: 210px;
 }
+.line_country_3{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-left: 305px;
+    margin-top: 430px;
+}
+.line_country_4{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-left: 305px;
+    margin-top: 652px;
+}
 
 .line-2{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-left: -1px;
+    margin-top: 105px;
+}
+.line-3{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-left: -1px;
+    margin-top: 105px;
+}
+.line-4{
     width: 15px;
     border: 1px solid #00369E;
     border-radius: 0px;
