@@ -46,3 +46,7 @@ final = FootballObj.Final.Final()
 #            country = input("enter country")
 #            results = input("enter score")
 #            return self(country, results)
+
+
+#def list_sort():
+#    list.sort(key=lambda x: x.results, reverse = True)
