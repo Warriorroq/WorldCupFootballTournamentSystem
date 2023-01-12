@@ -380,7 +380,7 @@ select {
 }
 
 
-input{
+/* input{
     outline: 0;
     grid-gap: 8px;
     align-items: center;
@@ -401,12 +401,12 @@ input{
     text-overflow: ellipsis;
     transition: all .14s ease-out;
     white-space: nowrap;
-}
+} */
 
-input:hover {
+/* input:hover {
     box-shadow: 4px 4px 0 #000;
     transform: translate(-4px,-4px);
 }
 input:focus-visible{
     outline-offset: 1px;
-}
+} */
