@@ -28,8 +28,8 @@ body {
 /* #tournament-net{
 } */
 .group{
-    height: 190px;
-    width: 200px;
+    height: 180px;
+    width: 245px;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
     margin-top: 50px;
@@ -42,13 +42,28 @@ body {
 }
 
 .group1_4{
-    height: 190px;
-    width: 200px;
+    height: 180px;
+    width: 245px;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
     padding: 10px;
     margin-left: 370px;
     margin-top: -90px;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+}
+
+.group1_4_2{
+    height: 180px;
+    width: 245px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid #ec2055;
+    padding: 10px;
+    margin-left: 370px;
+    margin-top: 430px;
     position: absolute;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
@@ -71,7 +86,7 @@ body {
     position: absolute;
     width: 125px;
     margin-top: -34px;
-    margin-left: 23px;
+    margin-left: 45px;
 }
 
 
@@ -99,7 +114,7 @@ body {
 }
 
 select {
-    width: 140px;
+    width: 120px;
     border: none;
     margin-left: 50px;
     height: 25px;
@@ -448,7 +463,7 @@ select {
     padding-right: 0px;
     margin-top: 17px;
     position: absolute;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 .right_score{
     width: 35px;
@@ -466,6 +481,7 @@ select {
 }
 
 .button1{
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
     outline: 0;
     grid-gap: 8px;
     align-items: center;
