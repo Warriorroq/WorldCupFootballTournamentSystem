@@ -308,42 +308,18 @@ select {
     margin-left: 325px;
     margin-top: 670px;
 }
+
 .line_country_5{
     width: 15px;
     border: 1px solid #00369E;
     border-radius: 0px;
     position: absolute;
-    margin-left: 856px;
-    margin-top: -165px;
+    margin-left: -142px;
+    margin-top: 98px;
     rotate: 180deg;
 }
-.line_country_6{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-top: 54px;
-    margin-left: 856px;
-    rotate: 180deg;
-}
-.line_country_7{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-top: 280px;
-    margin-left: 856px;
-    rotate: 180deg;
-}
-.line_country_8{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-top: 363px;
-    margin-left: 856px;
-    rotate: 180deg;
-}
+
+
 
 .line-2{
     width: 15px;
@@ -379,6 +355,8 @@ select {
     margin-top: 42px;
     transform: rotate(90deg);
 }
+
+
 .score{
     width: 35px;
     padding-top: 5px;
