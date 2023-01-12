@@ -318,6 +318,33 @@ select {
     margin-top: 98px;
     rotate: 180deg;
 }
+.line_country_6{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-left: -142px;
+    margin-top: 318px;
+    rotate: 180deg;
+}
+.line_country_7{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-left: -142px;
+    margin-top: 538px;
+    rotate: 180deg;
+}
+.line_country_8{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-left: -142px;
+    margin-top: 758px;
+    rotate: 180deg;
+}
 
 
 
@@ -328,6 +355,22 @@ select {
     position: absolute;
     margin-left: -1px;
     margin-top: 85px;
+}
+.mid-line-2{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+.right-mid-line-2{
+    width: 15px;
+    border: 1px solid #00369E;
+    border-radius: 0px;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 44px;
 }
 .line-3{
     width: 15px;
