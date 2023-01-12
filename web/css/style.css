@@ -31,7 +31,7 @@ body {
     height: 190px;
     width: 200px;
     background: rgba(217, 217, 217, 0.1);
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ec2055;
     margin-top: 50px;
     padding: 10px;
     margin-left: 40px;
@@ -424,7 +424,7 @@ select {
 .score{
     width: 35px;
     padding-top: 5px;
-    background: #ff004d;
+    background: #47b8ab;
     padding-bottom: 5px;
     border: none;
     color: #fff;
@@ -437,7 +437,8 @@ select {
 .right_score{
     width: 35px;
     padding-top: 5px;
-    background: #ff004d;
+    background: #47b8ab;
+    /* background: #ff004d; */
     padding-bottom: 5px;
     border: none;
     color: #fff;
