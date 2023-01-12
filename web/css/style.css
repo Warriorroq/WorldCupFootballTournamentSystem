@@ -145,6 +145,26 @@ select {
     margin-top: 210px;
     margin-left: 90px;
 }
+.group-a-1{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 32px;
+}
+
+.group-a{
+    width: 45px;
+    height: 45px;
+    rotate: 180deg;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 32px;
+}
 .four_country{
     width: 45px;
     height: 45px;
