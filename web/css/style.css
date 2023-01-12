@@ -5,28 +5,10 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     margin: 0px;
-    /* background: #991B4B; */
     padding-bottom: 10%;
     background: linear-gradient(55deg,#300010,#92092f,#671127);
-    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #232fd5, #23d5ab); */
-    /* background-size: 400% 400%; */
-    /* animation: gradient 10s ease infinite; */
 }
 
-/* @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-} */
-
-/* #tournament-net{
-} */
 .group{
     height: 180px;
     width: 245px;
@@ -176,6 +158,21 @@ body {
     box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
 }
 
+.group_final{
+    height: 180px;
+    width: 245px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid #ec2055;
+    padding: 10px;
+    margin-left: 1270px;
+    margin-top: 680px;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+}
+
 
 .text1{
     font-size: 19px;
@@ -232,56 +229,7 @@ select {
     outline: none;
 }
 
-/* .country_block{
-    margin-top: 40px;
-    position: absolute;
-} */
 
-.right-grid{
-    display: grid;
-    justify-content: end;
-    margin-top: -1050px;
-    margin-right: 45px;
-}
-
-.first_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-left: 90px;
-    margin-top: 30px;
-}
-
-.first_country_mid_line{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: -30px;
-    margin-left: 15px;
-}
-
-.second_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 75px;
-    margin-left: 90px;
-}
-.third_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 210px;
-    margin-left: 90px;
-}
 .group-a-1{
     width: 45px;
     height: 45px;
@@ -302,259 +250,6 @@ select {
     margin-top: 22px;
     margin-left: 32px;
 }
-.four_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 253px;
-    margin-left: 90px;
-    
-}
-.five_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 293px;
-    margin-left: 90px;
-}
-.six_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 335px;
-    margin-left: 90px;
-}
-.seven_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 470px;
-    margin-left: 90px;
-}
-.eight_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 378px;
-    margin-left: 90px;
-}
-.nine_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 32px;
-    margin-left: -315px;
-}
-.ten_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 77px;
-    margin-left: -315px;
-}
-.eleven_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 212px;
-    margin-left: -315px;
-}
-.twelve_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 255px;
-    margin-left: -315px;
-}
-.thirdteen_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 295px;
-    margin-left: -315px;
-}
-.fourteen_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 337px;
-    margin-left: -315px;
-}
-.fiveteen_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 472px;
-    margin-left: -315px;
-}
-.sixteen_country{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    margin-top: 380px;
-    margin-left: -315px;
-}
-
-
-
-
-.line{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: 325px;
-    margin-top: 10px;
-}
-.mid_line{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: 15px;
-    margin-top: 50px;
-}
-
-.line_country_2{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: 325px;
-    margin-top: 230px;
-}
-.line_country_3{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: 325px;
-    margin-top: 450px;
-}
-.line_country_4{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: 325px;
-    margin-top: 670px;
-}
-
-.line_country_5{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: -142px;
-    margin-top: 98px;
-    rotate: 180deg;
-}
-.line_country_6{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: -142px;
-    margin-top: 318px;
-    rotate: 180deg;
-}
-.line_country_7{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: -142px;
-    margin-top: 538px;
-    rotate: 180deg;
-}
-.line_country_8{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: -142px;
-    margin-top: 758px;
-    rotate: 180deg;
-}
-
-
-
-.line-2{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: -1px;
-    margin-top: 85px;
-}
-.mid-line-2{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: 15px;
-    margin-top: 40px;
-}
-.right-mid-line-2{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: 15px;
-    margin-top: 44px;
-}
-.line-3{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: -1px;
-    margin-top: 105px;
-}
-.line-4{
-    width: 15px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-left: -1px;
-    margin-top: 105px;
-}
-
-.long-line{
-    margin-left: -28px;
-    width: 86px;
-    border: 1px solid #00369E;
-    border-radius: 0px;
-    position: absolute;
-    margin-top: 42px;
-    transform: rotate(90deg);
-}
 
 
 .score{
@@ -574,7 +269,6 @@ select {
     width: 35px;
     padding-top: 5px;
     background: #47b8ab;
-    /* background: #ff004d; */
     padding-bottom: 5px;
     border: none;
     color: #fff;
@@ -616,7 +310,3 @@ select {
 .button1:focus-visible{
     outline-offset: 1px;
 }
-
-
-/* #8b173a */
-/* #1e0c17 */
