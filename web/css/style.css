@@ -108,18 +108,18 @@ select {
 }
 
 .first_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 5px;
-    margin-left: 55px;
+    margin-left: 80px;
+    margin-top: 30px;
 }
 
 .first_country_mid_line{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
@@ -128,67 +128,68 @@ select {
 }
 
 .second_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 69px;
-    margin-left: 55px;
+    margin-top: 75px;
+    margin-left: 80px;
 }
 .third_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 182px;
-    margin-left: 55px;
+    margin-top: 210px;
+    margin-left: 80px;
 }
 .four_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 244px;
-    margin-left: 55px;
+    margin-top: 253px;
+    margin-left: 80px;
+    
 }
 .five_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 265px;
-    margin-left: 55px;
+    margin-top: 293px;
+    margin-left: 80px;
 }
 .six_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 329px;
-    margin-left: 55px;
+    margin-top: 335px;
+    margin-left: 80px;
 }
 .seven_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 445px;
-    margin-left: 55px;
+    margin-top: 470px;
+    margin-left: 80px;
 }
 .eight_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 372px;
-    margin-left: 55px;
+    margin-top: 378px;
+    margin-left: 80px;
 }
 .nine_country{
     width: 60px;
@@ -271,8 +272,8 @@ select {
     border: 1px solid #00369E;
     border-radius: 0px;
     position: absolute;
-    margin-left: 305px;
-    margin-top: -9px;
+    margin-left: 315px;
+    margin-top: 10px;
 }
 .mid_line{
     width: 15px;
@@ -288,24 +289,24 @@ select {
     border: 1px solid #00369E;
     border-radius: 0px;
     position: absolute;
-    margin-left: 305px;
-    margin-top: 210px;
+    margin-left: 315px;
+    margin-top: 230px;
 }
 .line_country_3{
     width: 15px;
     border: 1px solid #00369E;
     border-radius: 0px;
     position: absolute;
-    margin-left: 305px;
-    margin-top: 430px;
+    margin-left: 315px;
+    margin-top: 450px;
 }
 .line_country_4{
     width: 15px;
     border: 1px solid #00369E;
     border-radius: 0px;
     position: absolute;
-    margin-left: 305px;
-    margin-top: 652px;
+    margin-left: 315px;
+    margin-top: 670px;
 }
 .line_country_5{
     width: 15px;
@@ -350,7 +351,7 @@ select {
     border-radius: 0px;
     position: absolute;
     margin-left: -1px;
-    margin-top: 105px;
+    margin-top: 85px;
 }
 .line-3{
     width: 15px;
@@ -370,15 +371,30 @@ select {
 }
 
 .long-line{
-    margin-left: -39px;
-    width: 106px;
+    margin-left: -28px;
+    width: 86px;
     border: 1px solid #00369E;
     border-radius: 0px;
     position: absolute;
-    margin-top: 52px;
+    margin-top: 42px;
     transform: rotate(90deg);
 }
-
+.score{
+    width: 35px;
+    padding-top: 5px;
+    background: #ff004d;
+    padding-bottom: 5px;
+    border: none;
+    color: #fff;
+    padding-left: 25px;
+    padding-right: 0px;
+    margin-top: 17px;
+    position: absolute;
+    margin-left: 10px;
+}
+.score::after{
+    border: none;
+}
 
 /* input{
     outline: 0;
