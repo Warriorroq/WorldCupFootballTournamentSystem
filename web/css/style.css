@@ -113,7 +113,7 @@ select {
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-left: 80px;
+    margin-left: 90px;
     margin-top: 30px;
 }
 
@@ -134,7 +134,7 @@ select {
     object-fit: cover;
     position: absolute;
     margin-top: 75px;
-    margin-left: 80px;
+    margin-left: 90px;
 }
 .third_country{
     width: 45px;
@@ -143,7 +143,7 @@ select {
     object-fit: cover;
     position: absolute;
     margin-top: 210px;
-    margin-left: 80px;
+    margin-left: 90px;
 }
 .four_country{
     width: 45px;
@@ -152,7 +152,7 @@ select {
     object-fit: cover;
     position: absolute;
     margin-top: 253px;
-    margin-left: 80px;
+    margin-left: 90px;
     
 }
 .five_country{
@@ -162,7 +162,7 @@ select {
     object-fit: cover;
     position: absolute;
     margin-top: 293px;
-    margin-left: 80px;
+    margin-left: 90px;
 }
 .six_country{
     width: 45px;
@@ -171,7 +171,7 @@ select {
     object-fit: cover;
     position: absolute;
     margin-top: 335px;
-    margin-left: 80px;
+    margin-left: 90px;
 }
 .seven_country{
     width: 45px;
@@ -180,7 +180,7 @@ select {
     object-fit: cover;
     position: absolute;
     margin-top: 470px;
-    margin-left: 80px;
+    margin-left: 90px;
 }
 .eight_country{
     width: 45px;
@@ -189,79 +189,79 @@ select {
     object-fit: cover;
     position: absolute;
     margin-top: 378px;
-    margin-left: 80px;
+    margin-left: 90px;
 }
 .nine_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 5px;
-    margin-left: -290px;
+    margin-top: 32px;
+    margin-left: -315px;
 }
 .ten_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 70px;
-    margin-left: -290px;
+    margin-top: 77px;
+    margin-left: -315px;
 }
 .eleven_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 182px;
-    margin-left: -290px;
+    margin-top: 212px;
+    margin-left: -315px;
 }
 .twelve_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 246px;
-    margin-left: -290px;
+    margin-top: 255px;
+    margin-left: -315px;
 }
 .thirdteen_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 270px;
-    margin-left: -290px;
+    margin-top: 295px;
+    margin-left: -315px;
 }
 .fourteen_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 336px;
-    margin-left: -290px;
+    margin-top: 337px;
+    margin-left: -315px;
 }
 .fiveteen_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 450px;
-    margin-left: -290px;
+    margin-top: 472px;
+    margin-left: -315px;
 }
 .sixteen_country{
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    margin-top: 378px;
-    margin-left: -290px;
+    margin-top: 380px;
+    margin-left: -315px;
 }
 
 
@@ -272,7 +272,7 @@ select {
     border: 1px solid #00369E;
     border-radius: 0px;
     position: absolute;
-    margin-left: 315px;
+    margin-left: 325px;
     margin-top: 10px;
 }
 .mid_line{
@@ -289,7 +289,7 @@ select {
     border: 1px solid #00369E;
     border-radius: 0px;
     position: absolute;
-    margin-left: 315px;
+    margin-left: 325px;
     margin-top: 230px;
 }
 .line_country_3{
@@ -297,7 +297,7 @@ select {
     border: 1px solid #00369E;
     border-radius: 0px;
     position: absolute;
-    margin-left: 315px;
+    margin-left: 325px;
     margin-top: 450px;
 }
 .line_country_4{
@@ -305,7 +305,7 @@ select {
     border: 1px solid #00369E;
     border-radius: 0px;
     position: absolute;
-    margin-left: 315px;
+    margin-left: 325px;
     margin-top: 670px;
 }
 .line_country_5{
@@ -390,10 +390,20 @@ select {
     padding-right: 0px;
     margin-top: 17px;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 25px;
 }
-.score::after{
+.right_score{
+    width: 35px;
+    padding-top: 5px;
+    background: #ff004d;
+    padding-bottom: 5px;
     border: none;
+    color: #fff;
+    padding-left: 25px;
+    padding-right: 0px;
+    margin-top: 17px;
+    position: absolute;
+    margin-left: -265px;
 }
 
 /* input{
