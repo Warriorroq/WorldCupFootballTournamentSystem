@@ -40,9 +40,9 @@ sfinal = FootballObj.SemiFinal.SFinal()
 
 final = FootballObj.Final.Final()
 
-@classmethod
- def get_user_input(self):
-        while 1:
-            country = input("enter country")
-            results = input("enter score")
-            return self(country, results)
+#@classmethod
+# def get_user_input(self):
+#        while 1:
+#            country = input("enter country")
+#            results = input("enter score")
+#            return self(country, results)
