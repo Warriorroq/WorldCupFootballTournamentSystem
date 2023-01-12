@@ -71,6 +71,51 @@ body {
     box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
 }
 
+.group1_4_2_1{
+    height: 180px;
+    width: 245px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid #ec2055;
+    padding: 10px;
+    margin-left: 370px;
+    margin-top: 930px;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+}
+
+.group1_4_2_1_1{
+    height: 180px;
+    width: 245px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid #ec2055;
+    padding: 10px;
+    margin-left: 370px;
+    margin-top: 1450px;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+}
+
+.group1_2{
+    height: 180px;
+    width: 245px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid #ec2055;
+    padding: 10px;
+    margin-left: 670px;
+    margin-top: 170px;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+}
+
 
 .text1{
     font-size: 19px;
