@@ -6,7 +6,8 @@ let teamsBlocks = [...document.querySelectorAll("[id=team]")].map(i => {
     lastValue : "",
     htmlData : i,
     selector : i.getElementsByClassName("teamsSelect")[0],
-    image : i.getElementsByClassName("teamImg")[0]
+    image : i.getElementsByClassName("teamImg")[0],
+    score : i.getElementsByClassName("score")[0]
   }
   return block;
 });
@@ -75,6 +76,6 @@ function addOptionToAllSelectors(value, teamToSkip = null) {
   }
 }
 
-function sendTeamsDataToPython(){
-  eel.readDataFromFontEnd(teamsBlocks.map(i => i.lastValue))();
+function sendFirstTourTeamsDataToPython(){
+  eel.readDataFromFontEnd(teamsBlocks.map(i => [i.lastValue, i.score.value]))();
 }
