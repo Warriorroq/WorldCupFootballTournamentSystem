@@ -4,13 +4,13 @@ import PyEvent
 
 onDataReceived = PyEvent.Event()
 
+
 class HTMLGUI:
     def __init__(self, folder = "web"):
         eel.init(folder)
 
     def start(self, file = "index.html"):
         eel.start(file, size = (1080,720))
-
 
 
 @eel.expose
