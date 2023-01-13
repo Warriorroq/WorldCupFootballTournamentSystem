@@ -10,7 +10,7 @@ body {
 }
 
 .group{
-    height: 180px;
+    height: 100px;
     width: 245px;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
@@ -24,13 +24,13 @@ body {
 }
 
 .group1_4{
-    height: 180px;
+    height: 100px;
     width: 245px;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
     padding: 10px;
     margin-left: 370px;
-    margin-top: -90px;
+    margin-top: -40px;
     position: absolute;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
@@ -39,13 +39,13 @@ body {
 }
 
 .group1_4_2{
-    height: 180px;
+    height: 100px;
     width: 245px;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
     padding: 10px;
     margin-left: 370px;
-    margin-top: 430px;
+    margin-top: 300px;
     position: absolute;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
@@ -54,13 +54,13 @@ body {
 }
 
 .group1_4_2_1{
-    height: 180px;
+    height: 100px;
     width: 245px;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
     padding: 10px;
     margin-left: 370px;
-    margin-top: 930px;
+    margin-top: 660px;
     position: absolute;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
@@ -69,13 +69,13 @@ body {
 }
 
 .group1_4_2_1_1{
-    height: 180px;
+    height: 100px;
     width: 245px;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
     padding: 10px;
     margin-left: 370px;
-    margin-top: 1450px;
+    margin-top: 1000px;
     position: absolute;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
@@ -84,13 +84,13 @@ body {
 }
 
 .group1_2{
-    height: 180px;
+    height: 100px;
     width: 245px;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
     padding: 10px;
     margin-left: 670px;
-    margin-top: 170px;
+    margin-top: 140px;
     position: absolute;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
@@ -99,13 +99,13 @@ body {
 }
 
 .group1_2_3{
-    height: 180px;
+    height: 100px;
     width: 245px;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
     padding: 10px;
     margin-left: 670px;
-    margin-top: 675px;
+    margin-top: 830px;
     position: absolute;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
@@ -113,59 +113,22 @@ body {
     box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
 }
 
-.group1_2_3_4{
-    height: 180px;
-    width: 245px;
-    background: rgba(217, 217, 217, 0.1);
-    border: 1px solid #ec2055;
-    padding: 10px;
-    margin-left: 670px;
-    margin-top: 1190px;
+.buttons1{
     position: absolute;
-    border-radius: 10px;
-    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
-    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
-    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    margin-left: 1360px;
+    margin-top: 700px;
 }
 
-.group1_2_3_4_5{
-    height: 180px;
-    width: 245px;
-    background: rgba(217, 217, 217, 0.1);
-    border: 1px solid #ec2055;
-    padding: 10px;
-    margin-left: 970px;
-    margin-top: 425px;
-    position: absolute;
-    border-radius: 10px;
-    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
-    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
-    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
-}
 
-.group1_2_3_4_5_6{
-    height: 180px;
-    width: 245px;
-    background: rgba(217, 217, 217, 0.1);
-    border: 1px solid #ec2055;
-    padding: 10px;
-    margin-left: 970px;
-    margin-top: 930px;
-    position: absolute;
-    border-radius: 10px;
-    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
-    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
-    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
-}
 
 .group_final{
-    height: 180px;
+    height: 100px;
     width: 245px;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
     padding: 10px;
-    margin-left: 1270px;
-    margin-top: 680px;
+    margin-left: 980px;
+    margin-top: 485px;
     position: absolute;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
@@ -289,12 +252,13 @@ select {
     border-radius: 4px;
     cursor: pointer;
     flex-shrink: 0;
-    font-size: 16px;
+    font-size: 25px;
     gap: 8px;
+    color: rgb(255, 255, 255);
     justify-content: center;
     line-height: 1.5;
     overflow: hidden;
-    padding: 7px 35px;
+    padding: 10px 50px;
     margin-left: 15px;
     margin-top: 10px;
     text-decoration: none;
