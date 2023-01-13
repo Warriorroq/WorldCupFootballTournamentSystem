@@ -6,7 +6,7 @@ import FootballObj.SemiFinal
 import FootballObj.Final
 
 
-teams = [32]
+teams = [] * 32
 
 #Реализация, при которой пользователь вводит все переменные вручную
 # while True:
