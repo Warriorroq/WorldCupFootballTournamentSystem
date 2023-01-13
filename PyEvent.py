@@ -1,7 +1,7 @@
 class Event:
     __functions = []
 
-    def run(self, *args):
+    def invoke(self, *args):
         for i in self.__functions:
             i(args)
 
