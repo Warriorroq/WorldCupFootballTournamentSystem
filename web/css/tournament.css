@@ -10,7 +10,7 @@ body {
 }
 
 .group{
-    height: 180px;
+    height: 100px;
     width: 245px;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
@@ -23,43 +23,90 @@ body {
     box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
 }
 
-.group_right{
-    height: 180px;
+.group1_4{
+    height: 100px;
     width: 245px;
-    display: grid;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
-    margin-top: -958px;
     padding: 10px;
-    margin-left: 1000px;
+    margin-left: 370px;
+    margin-top: -40px;
+    position: absolute;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
     -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
     box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
 }
 
-.group_right_1{
-    height: 180px;
+.group1_4_2{
+    height: 100px;
     width: 245px;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
-    margin-top: 50px;
     padding: 10px;
-    margin-left: 1000px;
+    margin-left: 370px;
+    margin-top: 300px;
+    position: absolute;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
     -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
     box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
 }
 
-.group_right_2{
-    height: 180px;
+.group1_4_2_1{
+    height: 100px;
     width: 245px;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
-    margin-top: 50px;
     padding: 10px;
-    margin-left: 1000px;
+    margin-left: 370px;
+    margin-top: 660px;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+}
+
+.group1_4_2_1_1{
+    height: 100px;
+    width: 245px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid #ec2055;
+    padding: 10px;
+    margin-left: 370px;
+    margin-top: 1000px;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+}
+
+.group1_2{
+    height: 100px;
+    width: 245px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid #ec2055;
+    padding: 10px;
+    margin-left: 670px;
+    margin-top: 140px;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+}
+
+.group1_2_3{
+    height: 100px;
+    width: 245px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid #ec2055;
+    padding: 10px;
+    margin-left: 670px;
+    margin-top: 830px;
+    position: absolute;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
     -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
@@ -67,9 +114,26 @@ body {
 }
 
 .buttons1{
-    margin-left: 540px;
-    margin-top: -640px;
     position: absolute;
+    margin-left: 1360px;
+    margin-top: 700px;
+}
+
+
+
+.group_final{
+    height: 100px;
+    width: 245px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid #ec2055;
+    padding: 10px;
+    margin-left: 980px;
+    margin-top: -715px;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
 }
 
 
@@ -92,8 +156,6 @@ body {
 
 
 .two-blocks{
-    display: grid inline-block;
-    flex-wrap: nowrap;
     display: grid inline-block;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -130,6 +192,29 @@ select {
     outline: none;
 }
 
+
+.group-a-1{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 32px;
+}
+
+.group-a{
+    width: 45px;
+    height: 45px;
+    rotate: 180deg;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 32px;
+}
+
+
 .score{
     width: 35px;
     padding-top: 5px;
@@ -142,6 +227,19 @@ select {
     margin-top: 17px;
     position: absolute;
     margin-left: 10px;
+}
+.right_score{
+    width: 35px;
+    padding-top: 5px;
+    background: #47b8ab;
+    padding-bottom: 5px;
+    border: none;
+    color: #fff;
+    padding-left: 25px;
+    padding-right: 0px;
+    margin-top: 17px;
+    position: absolute;
+    margin-left: -265px;
 }
 
 .button1{
@@ -161,7 +259,8 @@ select {
     line-height: 1.5;
     overflow: hidden;
     padding: 10px 50px;
-    position: -webkit-sticky;
+    margin-left: 15px;
+    margin-top: 10px;
     text-decoration: none;
     text-overflow: ellipsis;
     transition: all .14s ease-out;
