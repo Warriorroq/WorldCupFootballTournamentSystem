@@ -8,5 +8,5 @@ class QFinal:
         print("quarter final")
         for i in self.matches:
             print(str(i))
-        return SFinal([Match([self.matches[i * 2].getWinner(), self.matches[i * 2 + 1].getWinner()]) for i in
-                           range(len(self.matches) // 2)])
+        return SFinal([Match([self.matches[i * 2].getWinner(), self.matches[i * 2 + 1].getWinner()])
+                       for i in range(len(self.matches) // 2)])

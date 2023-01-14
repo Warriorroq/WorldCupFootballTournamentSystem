@@ -7,5 +7,5 @@ class Final:
         print("final")
         for i in self.matches:
             print(str(i))
-        return Final([Match([self.matches[i * 2].getWinner(), self.matches[i * 2 + 1].getWinner()]) for i in
-                           range(len(self.matches) // 2)])
+        return Final([Match([self.matches[i * 2].getWinner(), self.matches[i * 2 + 1].getWinner()])
+                      for i in range(len(self.matches) // 2)])
