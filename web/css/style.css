@@ -66,9 +66,14 @@ body {
 }
 
 .buttons1{
-    margin-left: 540px;
+    margin-left: 450px;
     margin-top: -640px;
     position: absolute;
+}
+
+.all-blocks{
+    display: grid;
+    justify-content: space-around;
 }
 
 
@@ -144,6 +149,7 @@ select {
 .button1{
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     outline: 0;
+    margin-top: 15px;
     grid-gap: 8px;
     align-items: center;
     background: #008B8B;
