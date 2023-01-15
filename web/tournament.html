@@ -245,7 +245,7 @@
                                  <h3 class="teamName">Team</h3>
                                  <input type = "number" class = "score" value = "0"/>
                               </div>
-                              <button class="button" type="button">Click me</button>
+                              <button class="button" type="button" onclick="javascript:sendDataToBackend();">Click me</button>
                            </div>
                         </div>
                      </div>
@@ -259,6 +259,7 @@
 const teamsData = new Map();
 var lastRoundResults = [];
 var matches = [];
+var stage = 0;
 
 for (var i = 0; i < 4; i++)
     matches[i] = []
@@ -296,9 +297,23 @@ function createDataContainers() {
 
 createDataContainers();
 loadData();
-eel.readGameStateData()(function(result) {
-    lastRoundResults.push(result);
-});
+readGameStateData();
+function readGameStateData(){
+   eel.readGameStateData()(function(result) {
+      for(var i =0; i < result.length; i++){
+         var current = matches[stage][i];
+         current.teams[0].name.innerHTML = result[i][0];
+         current.teams[0].image.src = teamsData.get(result[i][0]);
+         current.teams[1].name.innerHTML = result[i][1];
+         current.teams[1].image.src = teamsData.get(result[i][1]);
+         current.groupName.innerHTML = result[i][0] + " vs " + result[i][1];
+         console.log(matches[stage][i]);
+      }
+   });
+}
+function sendDataToBackend() {
+     eel.readDataFromFontEnd(matches[stage].map(i => [i.teams[0].score, i.teams[1].score]))();
+}
       </script>
    </body>
 </html>
