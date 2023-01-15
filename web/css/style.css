@@ -26,12 +26,11 @@ body {
 .group_right{
     height: 180px;
     width: 245px;
-    display: grid;
     background: rgba(217, 217, 217, 0.1);
     border: 1px solid #ec2055;
     margin-top: -958px;
     padding: 10px;
-    margin-left: 1000px;
+    margin-left: 700px;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
     -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
@@ -45,7 +44,7 @@ body {
     border: 1px solid #ec2055;
     margin-top: 50px;
     padding: 10px;
-    margin-left: 1000px;
+    margin-left: 700px;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
     -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
@@ -59,7 +58,7 @@ body {
     border: 1px solid #ec2055;
     margin-top: 50px;
     padding: 10px;
-    margin-left: 1000px;
+    margin-left: 700px;
     border-radius: 10px;
     -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
     -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
@@ -92,8 +91,6 @@ body {
 
 
 .two-blocks{
-    display: grid inline-block;
-    flex-wrap: nowrap;
     display: grid inline-block;
     flex-wrap: nowrap;
     justify-content: space-around;
