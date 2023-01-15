@@ -298,6 +298,7 @@ function createDataContainers() {
 createDataContainers();
 loadData();
 readGameStateData();
+
 function readGameStateData(){
    eel.readGameStateData()(function(result) {
       for(var i =0; i < result.length; i++){
@@ -307,12 +308,14 @@ function readGameStateData(){
          current.teams[1].name.innerHTML = result[i][1];
          current.teams[1].image.src = teamsData.get(result[i][1]);
          current.groupName.innerHTML = result[i][0] + " vs " + result[i][1];
-         console.log(matches[stage][i]);
       }
    });
 }
+
 function sendDataToBackend() {
-     eel.readDataFromFontEnd(matches[stage].map(i => [i.teams[0].score, i.teams[1].score]))();
+     eel.readDataFromFontEnd(matches[stage].map(i => [i.teams[0].score.value, i.teams[1].score.value]))();
+     stage += 1;
+     readGameStateData();
 }
       </script>
    </body>
