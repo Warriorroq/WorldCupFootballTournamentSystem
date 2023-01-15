@@ -7,4 +7,4 @@ def readGameStateData():
 
 
 program = Program()
-program.start("index.html")
+program.start("index.html") 
