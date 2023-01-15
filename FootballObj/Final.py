@@ -1,4 +1,4 @@
-from Match import *
+from FootballObj.Match import *
 class Final:
     def __init__(self, match):
         self.matches = match

@@ -1,11 +1,18 @@
-from Match import *
-from Round16 import *
+from FootballObj.Match import *
+from FootballObj.Round16 import *
+from FootballObj.Group import *
+
 class FirstTour:
     __groups = []
-    def __init__(self, groups):
-        self.__groups = groups
 
-    def proceed(self):
+    def readIncomeData(self, data):
+        data = data[0]
+        for i in range(len(data)//4):
+            self.__groups.append(Group(data[i*4:(i+1)*4]))
+        return
+
+    def proceed(self, data):
+        self.readIncomeData(data)
         print("groups:")
         for i in self.__groups:
             print(str(i))

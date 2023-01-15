@@ -1,10 +1,11 @@
-from QuarterFinal import *
-from Match import *
+from FootballObj.QuarterFinal import *
+from FootballObj.Match import *
+
 class Round16:
     def __init__(self, matches=None):
         self.matches = matches or []
 
-    def proceed(self):
+    def proceed(self, data):
         print("round 16")
         for i in self.matches:
             print(str(i))

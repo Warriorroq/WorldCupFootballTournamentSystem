@@ -25,9 +25,3 @@ def readAllCountryImages():
         countryName = source.replace('images/country/', '').replace('.jpeg', ' ').replace('_', ' ').strip()
         images.append((countryName, source))
     return images
-
-
-
-site = HTMLGUI()
-onDataReceived.add(print)
-site.start()
