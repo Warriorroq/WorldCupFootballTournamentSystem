@@ -256,47 +256,49 @@
          </div>
       </main>
       <script type="text/javascript">
-         const teamsData = new Map();
-         var lastRoundResults = [];
-         var matches = [];
+const teamsData = new Map();
+var lastRoundResults = [];
+var matches = [];
 
-         for(var i =0;i<4;i++)
-             matches[i] = []
+for (var i = 0; i < 4; i++)
+    matches[i] = []
 
-         function loadData(){
-           eel.readAllCountryImages()(function (result) {
-             result.forEach((element) => teamsData.set(element[0], element[1]));
-           });
-         }
+function loadData() {
+    eel.readAllCountryImages()(function(result) {
+        result.forEach((element) => teamsData.set(element[0], element[1]));
+    });
+}
 
-         function createDataContainers(){
-          var arr = [...document.getElementsByClassName('group')];
+function createDataContainers() {
+    var arr = [...document.getElementsByClassName('group')];
 
-          for(var i =0; i < arr.length;i++){
-          var groupHTMLTeams = [...arr[i].getElementsByClassName('team')].slice(0, 2);
+    for (var i = 0; i < arr.length; i++) {
+        var groupHTMLTeams = [...arr[i].getElementsByClassName('team')].slice(0, 2);
+        var teamsObjs = [];
 
-          for(var j =0; j < groupHTMLTeams.length;j++){
-             var team = {
+        for (var j = 0; j < groupHTMLTeams.length; j++) {
+            var team = {
                 name: groupHTMLTeams[j].getElementsByClassName("teamName")[0],
                 score: groupHTMLTeams[j].getElementsByClassName("score")[0],
                 image: groupHTMLTeams[j].getElementsByClassName("teamImg")[0]
-             }
-             console.log(team);
-          }
-          /*var match = {
-             teams : groupHTMLTeams,
-             groupName: i.getElementsByClassName("groupName")[0],
-             level: parseInt(i.getAttribute("tournamentLevel"))
-          }
-          matches[match.level].push(match);*/
-          }
-         }
+            }
+            teamsObjs.push(team);
+        }
 
-         createDataContainers();
-         loadData();
-         eel.readGameStateData()(function (result) {
-           lastRoundResults.push(result);
-         });
+        var match = {
+            teams: teamsObjs,
+            groupName: arr[i].getElementsByClassName("groupName")[0],
+            level: parseInt(arr[i].getAttribute("tournamentLevel"))
+        }
+        matches[match.level].push(match);
+    }
+}
+
+createDataContainers();
+loadData();
+eel.readGameStateData()(function(result) {
+    lastRoundResults.push(result);
+});
       </script>
    </body>
 </html>
