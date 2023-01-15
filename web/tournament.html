@@ -3,6 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <title>Football tournament</title>
+      <script src="eel.js"></script>
       <link rel="stylesheet" href="css/tournamentStyle.css" />
    </head>
    <body>
@@ -222,12 +223,17 @@
          </div>
       </main>
       <script type="text/javascript">
-         function setRecuresivelyPosition(currentGroup, layer=0){
-         
-         }
-         console.log(document.getElementsByClassName("group"));
-         setRecuresivelyPosition(document.getElementsByClassName("group"));
-         
+        const teamsData = new Map();
+
+        eel.readGameStateData()(function (result) {
+          console.log(result);
+        });
+
+        function loadData(){
+          eel.readAllCountryImages()(function (result) {
+            result.forEach((element) => teamsData.set(element[0], element[1]));
+          });
+        }
       </script>
    </body>
 </html>

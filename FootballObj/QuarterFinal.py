@@ -1,5 +1,7 @@
 from FootballObj.SemiFinal import *
 from FootballObj.Match import *
+
+
 class QFinal:
     def __init__(self, matches):
         self.matches = matches or []

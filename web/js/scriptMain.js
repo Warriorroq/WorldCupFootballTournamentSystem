@@ -78,4 +78,5 @@ function addOptionToAllSelectors(value, teamToSkip = null) {
 
 function sendFirstTourTeamsDataToPython(){
   eel.readDataFromFontEnd(teamsBlocks.map(i => [i.lastValue, i.score.value]))();
+  window.location.href = "tournament.html";
 }

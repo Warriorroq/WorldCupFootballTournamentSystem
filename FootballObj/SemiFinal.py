@@ -1,5 +1,6 @@
 from FootballObj.Final import *
 from FootballObj.Match import *
+
 class SFinal:
     def __init__(self, matches=None):
         self.matches = matches or []

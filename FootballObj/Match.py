@@ -9,5 +9,8 @@ class Match:
             return self.teams[0]
         return self.teams[1]
 
+    def convertToSendableData(self):
+        return [self.teams[0].country, self.teams[1].country]
+
     def __str__(self):
-        return f"match: {self.teams[0]} vs {self.teams[1]}"
+        return f"match: {self.teams[0].country} vs {self.teams[1].country}"

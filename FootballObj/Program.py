@@ -19,3 +19,6 @@ class Program:
     def proceed(self, data):
         if self.currentState is not None:
             self.currentState = self.currentState.proceed(data)
+
+    def convertToSendableData(self):
+        return [i.convertToSendableData() for i in self.currentState.matches]
