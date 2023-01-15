@@ -1,7 +1,7 @@
 import random
 from HTMLGUI import *
 from FootballObj.FirstTour import *
-
+from FootballObj.Final import *
 
 class Program:
     currentState = None
@@ -22,4 +22,7 @@ class Program:
             self.currentState = self.currentState.proceed(data)
 
     def convertToSendableData(self):
-        return [i.convertToSendableData() for i in self.currentState.matches]
+        if self.currentState is not Final:
+            return [i.convertToSendableData() for i in self.currentState.matches]
+        else:
+            return self.currentState.matches.getWinner()
