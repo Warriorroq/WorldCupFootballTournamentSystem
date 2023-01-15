@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Sofia+Sans+Extra+Condensed&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    margin: 0px;
+    padding-bottom: 10%;
+    background: linear-gradient(55deg,#300010,#92092f,#671127);
+}
+
+.group{
+    height: 100px;
+    width: 245px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid #ec2055;
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    -moz-box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    box-shadow: 20px 11px 44px 5px rgba(0,0,0,0.53);
+    margin-left:200px;
+    display: inline-block;
+    position: relative;
+}
+
+.group .teamImg{
+    width: 27.52px;
+    height: 27.7px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 5px;
+}
+
+.group select {
+    width: 120px;
+    border: none;
+    margin-left: 50px;
+    height: 25px;
+    margin-top: 17px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    background: #D9D9D9;
+    color: rgb(0, 0, 0);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.group .score{
+    width: 35px;
+    padding-top: 5px;
+    background: #47b8ab;
+    padding-bottom: 5px;
+    border: none;
+    color: #fff;
+    padding-left: 25px;
+    padding-right: 0px;
+    margin-top: 17px;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.title{
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: bold;
+}
+.group .childs{
+    position: absolute;
+    top:-100px;
+}
+.group .childs .group:nth-child(1){
+    top:-100px;
+}
+
+.group .childs .group:nth-child(2){
+    top: 100px;
+}
+
+.r11{
+    margin-top: 50%;
+}
