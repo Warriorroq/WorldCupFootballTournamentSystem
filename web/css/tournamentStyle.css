@@ -8,6 +8,7 @@ body {
     background: linear-gradient(55deg,#300010,#92092f,#671127);
     width: 100%;
     height: 100vh;
+    padding-bottom: 500px;
 }
 
 .group{
@@ -66,6 +67,36 @@ body {
     position: absolute;
     top:-100px;
 }
+
+.score{
+    width: 35px;
+    padding-top: 5px;
+    background: #47b8ab;
+    padding-bottom: 5px;
+    border: none;
+    color: #fff;
+    padding-left: 25px;
+    padding-right: 0px;
+    margin-top: 17px;
+    position: absolute;
+    margin-left: 10px;
+}
+.text1{
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    border-bottom: 25px solid rgba(217, 217, 217, 0.1);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    height: 0px;
+    position: absolute;
+    width: 125px;
+    margin-top: -25px;
+    margin-left: 45px;
+}
 /*
 .group .childs .group:nth-child(1){
     top:-100px;
@@ -75,6 +106,6 @@ body {
     top: 100px;
 }
 */
-.r11{
-    margin-top: 50%;
-}
+/* .r11{
+    margin-top: 1000px;
+} */
