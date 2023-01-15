@@ -2,6 +2,7 @@ import random
 from HTMLGUI import *
 from FootballObj.FirstTour import *
 
+
 class Program:
     currentState = None
     gui = None
