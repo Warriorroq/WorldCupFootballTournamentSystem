@@ -32,8 +32,12 @@ body {
     object-fit: cover;
     position: absolute;
     margin-left: 10px;
+    transition: transform .2s; 
 }
 
+.group .teamImg:hover{
+    transform: scale(1.5);
+}
 .group select {
     width: 120px;
     border: none;

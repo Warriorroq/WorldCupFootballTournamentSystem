@@ -81,8 +81,8 @@ function sendFirstTourTeamsDataToPython(){
   for (const team of teamsBlocks){
     if(team.lastValue == "")
     {
-      alert("Pease fill in all the blanks");
-      break;
+      var alertDiv = document.getElementsByClassName('alert')[0];
+      alertDiv.style.display = "";
       return;
     }
   }
