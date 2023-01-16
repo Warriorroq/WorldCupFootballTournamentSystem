@@ -209,6 +209,10 @@
             </div>
          </div>
          <button class="button" type="button" onclick="javascript:sendDataToBackend();" style="bottom: 10%; right: 10%; position: fixed;">Proceed</button>
+         <div class="alert" style="top:10%; left:10%; width:80%; height:80%; position: fixed; background-color: #f44336; display:none; ">
+            <img class = "alertImg" style="top:10%; left:10%; width:80%; height:60%; position: relative;" />
+            <strong style="top:10%; position: relative; text-align:center;"><h1 class = "alertText">Winner!</h1></strong>
+         </div>
       </main>      
    </body>
 <script type="text/javascript">
@@ -273,13 +277,17 @@ function sendDataToBackend() {
    if(stage >= 3){
       var teams = matches[3][0].teams;
       winner = teams[0].score.value > teams[1].score.value ? teams[0] : teams[1];
-      alert(winner.name.innerHTML);
-      return;
+      var alertDiv = document.getElementsByClassName('alert')[0];
+      alertDiv.style.display = "";
+      var img = alertDiv.getElementsByClassName("alertImg")[0];
+      img.src = teamsData.get(winner.name.innerHTML);
+      var text = alertDiv.getElementsByClassName("alertText")[0];
+      text.innerHTML = winner.name.innerHTML + " is winner!"
    }
    eel.readDataFromFontEnd(matches[stage].map(i => [i.teams[0].score.value, i.teams[1].score.value]))();
    stage += 1;
    readGameStateData();
-}     
+}        
 
 loadData();
 createDataContainers();

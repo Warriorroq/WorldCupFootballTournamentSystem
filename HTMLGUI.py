@@ -5,6 +5,7 @@ import PyEvent
 
 onDataReceived = PyEvent.Event()
 
+
 class HTMLGUI:
 
     def __init__(self, folder = "web"):

@@ -146,15 +146,25 @@ body {
     height: 25px;
     text-align: center;
 }
-/*
-.group .childs .group:nth-child(1){
-    top:-100px;
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 5%;
 }
 
-.group .childs .group:nth-child(2){
-    top: 100px;
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
-*/
-/* .r11{
-    margin-top: 1000px;
-} */
+
+.closebtn:hover {
+  color: black;
+}
