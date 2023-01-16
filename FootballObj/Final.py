@@ -7,7 +7,6 @@ class Final:
 
     def proceed(self, data):
         self.readData(data[0])
-        self.matches = [Match([self.matches[0].getWinner(), self.matches[1]])]
         return self
 
     def readData(self, data):
