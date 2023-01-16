@@ -10,6 +10,7 @@
       <main>
          <h2 class="title">World cup Bracket 2022</h2>
          <!-- part 0 -->
+         <h3 class="final1_8">1/8 final</h3>
          <div class="group" style="position: absolute; margin-left: 45px; margin-top: 135px;" tournamentLevel = "0">
             <h1 class="groupName">Group A</h1>
             <div class="team">
@@ -62,6 +63,7 @@
                <input type = "number" class = "score" value = "0"/>
             </div>
          </div>
+         <h3 class="quarterfinal">Quarterfinals</h3>
          <div class="group" style="position: absolute; margin-left: 45px; margin-top: 675px;" tournamentLevel = "0">
             <h1 class="groupName">Group E</h1>
             <div class="team">
@@ -168,6 +170,7 @@
             </div>
          </div>
          <!-- part 2 -->
+         <h3 class="semifinal">Semifinal</h3>
          <div class="group" style="position: absolute; margin-left: 645px; margin-top: 335px;" tournamentLevel = "2">
             <h1 class="groupName">Group E</h1>
             <div class="team">
@@ -195,6 +198,7 @@
             </div>
          </div>
          <!-- part 3 -->
+         <h3 class="final">Final</h3>
          <div class="group" style="position: absolute; margin-left: 945px; margin-top: 635px;" tournamentLevel = "3">
             <h1 class="groupName">Group E</h1>
             <div class="team">
@@ -209,9 +213,26 @@
             </div>
          </div>
          <button class="button" type="button" onclick="javascript:sendDataToBackend();" style="bottom: 10%; right: 10%; position: fixed;">Proceed</button>
-         <div class="alert" style="top:10%; left:10%; width:80%; height:80%; position: fixed; background-color: #f44336; display:none; ">
-            <img class = "alertImg" style="top:10%; left:10%; width:80%; height:60%; position: relative;" />
-            <strong style="top:10%; position: relative; text-align:center;"><h1 class = "alertText">Winner!</h1></strong>
+         <div class="alert" style="top: 10%;
+         left: 10%;
+         width: 80%;
+         border-radius: 10px;
+         height: 80%;
+         position: fixed;
+         background-color: #d90039f0;
+         display: none;">
+            <img class = "alertImg" style="top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 60%;
+            position: relative;" />
+            <strong style="top:10%; position: relative; text-align:center;"><h1 style="font-family: 'Permanent Marker', cursive;
+               font-size: 75px;
+               color: #eeeeee;
+               text-align: center;" class = "alertText">Winner!</h1></strong>
+               <div class="firework"></div>
+               <div class="firework"></div>
+               <div class="firework"></div>
          </div>
       </main>      
    </body>
