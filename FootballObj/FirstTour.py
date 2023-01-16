@@ -13,7 +13,4 @@ class FirstTour:
 
     def proceed(self, data):
         self.readIncomeData(data)
-        print("groups:")
-        for i in self.__groups:
-            print(str(i))
         return Round16([Match(i.getTwoBestTeams()) for i in self.__groups])

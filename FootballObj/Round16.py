@@ -8,9 +8,6 @@ class Round16:
 
     def proceed(self, data):
         self.readData(data[0])
-        print("round 16")
-        for i in self.matches:
-            print(str(i))
         return QFinal([Match([self.matches[i*2].getWinner(), self.matches[i*2 + 1].getWinner()])
                        for i in range(len(self.matches)//2)])
 
