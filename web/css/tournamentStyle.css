@@ -71,6 +71,8 @@ body {
     text-overflow: ellipsis;
     transition: all .14s ease-out;
     white-space: nowrap;
+    margin-left: 990px;
+    margin-top: 800px;
 } 
 
 .button:hover {
