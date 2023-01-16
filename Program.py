@@ -1,8 +1,7 @@
-import random
 from HTMLGUI import *
 from FootballObj.FirstTour import *
-from FootballObj.Final import *
-from FootballObj.Match import *
+
+
 class Program:
     currentState = None
     gui = None
@@ -10,7 +9,7 @@ class Program:
     def __init__(self):
         self.gui = HTMLGUI()
         self.currentState = FirstTour()
-        onDataReceived.add(print)
+        #onDataReceived.add(print)
         onDataReceived.add(self.proceed)
 
     def start(self, file):
@@ -22,7 +21,4 @@ class Program:
             self.currentState = self.currentState.proceed(data)
 
     def convertToSendableData(self):
-        if type(self.currentState) is Match:
-            return self.currentState.getWinner()
         return [i.convertToSendableData() for i in self.currentState.matches]
-

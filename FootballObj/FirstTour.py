@@ -1,6 +1,6 @@
-from FootballObj.Match import *
 from FootballObj.Round16 import *
 from FootballObj.Group import *
+
 
 class FirstTour:
     __groups = []

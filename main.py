@@ -1,4 +1,4 @@
-from FootballObj.Program import *
+from Program import *
 
 
 @eel.expose

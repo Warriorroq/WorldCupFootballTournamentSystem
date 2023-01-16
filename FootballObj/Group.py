@@ -1,4 +1,6 @@
 from FootballObj.Team import *
+
+
 class Group:
     def __init__(self, teams=None):
         self.teams = [Team(i[0], int(i[1])) for i in teams]

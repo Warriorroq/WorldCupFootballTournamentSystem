@@ -215,6 +215,7 @@
 const teamsData = new Map();
 var matches = [];
 var stage = 0;
+var winner = null;
 
 for (var i = 0; i < 4; i++)
     matches[i] = []
@@ -237,7 +238,6 @@ function createDataContainers() {
    for (var i = 0; i < arr.length; i++) {
       var groupHTMLTeams = [...arr[i].getElementsByClassName('team')];
       var teamsObjs = [];
-      console.log(groupHTMLTeams);
       for (var j = 0; j < groupHTMLTeams.length; j++) {
          var team = {
             name: groupHTMLTeams[j].getElementsByClassName("teamName")[0],
@@ -256,10 +256,6 @@ function createDataContainers() {
    }
 }
 
-loadData();
-createDataContainers();
-readGameStateData();
-console.log(matches);
 function readGameStateData(){
    eel.readGameStateData()(function(result) {
       for(var i =0; i < result.length; i++){
@@ -273,17 +269,22 @@ function readGameStateData(){
    });
 }
 
+
 function sendDataToBackend() {
    if(stage >= 3){
-         eel.readGameStateData()(function(result) {
-            console.log(result);
-         });
-      //display icon
+      var teams = matches[3].teams
+      var winner = teams[0].score.value > teams[1].score.value ? teams[0] : teams[1]
+      console.log(winner.name.innerHTML);
       return;
    }
    eel.readDataFromFontEnd(matches[stage].map(i => [i.teams[0].score.value, i.teams[1].score.value]))();
    stage += 1;
    readGameStateData();
-}      
+}     
+
+loadData();
+createDataContainers();
+readGameStateData();
+ 
 </script>
 </html>
