@@ -232,7 +232,6 @@ function createDataContainers() {
 
    eel.readGameStateData()(function (result) {
       lastRoundResults.push(result);
-      console.log(lastRoundResults);        
    });
 
    for (var i = 0; i < arr.length; i++) {
@@ -272,9 +271,9 @@ function readGameStateData(){
 
 function sendDataToBackend() {
    if(stage >= 3){
-      var teams = matches[3].teams
-      var winner = teams[0].score.value > teams[1].score.value ? teams[0] : teams[1]
-      console.log(winner.name.innerHTML);
+      var teams = matches[3][0].teams;
+      winner = teams[0].score.value > teams[1].score.value ? teams[0] : teams[1];
+      alert(winner.name.innerHTML);
       return;
    }
    eel.readDataFromFontEnd(matches[stage].map(i => [i.teams[0].score.value, i.teams[1].score.value]))();
