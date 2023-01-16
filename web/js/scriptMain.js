@@ -25,6 +25,7 @@ function startFunc() {
 }
 
 function loadTeams() {
+  removeOptionFromAllSelectorsByValue("None");
   for (const team of teamsBlocks) {
     team.selector.addEventListener("change", function () {
         selectTeamFunc(team, this.value);
@@ -35,8 +36,8 @@ function loadTeams() {
 }
 
 function selectTeamFunc(team, value) {
-  team.image.src = teamsData.get(value);
   addOptionToAllSelectors(team.lastValue, team);
+  team.image.src = teamsData.get(value);
   removeOptionFromAllSelectorsByValue(value, team);
   team.lastValue = value;
 }
@@ -77,6 +78,14 @@ function addOptionToAllSelectors(value, teamToSkip = null) {
 }
 
 function sendFirstTourTeamsDataToPython(){
+  for (const team of teamsBlocks){
+    if(team.lastValue == "")
+    {
+      alert("Pease fill in all the blanks");
+      break;
+      return;
+    }
+  }
   eel.readDataFromFontEnd(teamsBlocks.map(i => [i.lastValue, i.score.value]))();
   window.location.href = "tournament.html";
 }
