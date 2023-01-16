@@ -111,7 +111,6 @@ body {
     position: absolute;
     margin-top: 16px;
     margin-left: 5px;
-    border: 2px solid black;
     transition: transform .2s;  
 }
 
