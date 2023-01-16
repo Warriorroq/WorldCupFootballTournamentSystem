@@ -83,7 +83,7 @@ function sendFirstTourTeamsDataToPython(){
     {
       var alertDiv = document.getElementsByClassName('alert')[0];
       alertDiv.style.display = "";
-      return;
+      //return;
     }
   }
   eel.readDataFromFontEnd(teamsBlocks.map(i => [i.lastValue, i.score.value]))();
