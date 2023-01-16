@@ -2,10 +2,11 @@ import eel
 import glob
 import PyEvent
 
+
 onDataReceived = PyEvent.Event()
 
-
 class HTMLGUI:
+
     def __init__(self, folder = "web"):
         eel.init(folder)
 

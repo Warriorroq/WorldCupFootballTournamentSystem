@@ -9,7 +9,6 @@ class Program:
     def __init__(self):
         self.gui = HTMLGUI()
         self.currentState = FirstTour()
-        #onDataReceived.add(print)
         onDataReceived.add(self.proceed)
 
     def start(self, file):
@@ -21,4 +20,5 @@ class Program:
             self.currentState = self.currentState.proceed(data)
 
     def convertToSendableData(self):
-        return [i.convertToSendableData() for i in self.currentState.matches]
+        if type(self.currentState) is not FirstTour:
+            return [i.convertToSendableData() for i in self.currentState.matches]
