@@ -303,7 +303,7 @@ function sendDataToBackend() {
       var img = alertDiv.getElementsByClassName("alertImg")[0];
       img.src = teamsData.get(winner.name.innerHTML);
       var text = alertDiv.getElementsByClassName("alertText")[0];
-      text.innerHTML = winner.name.innerHTML + " is winner!"
+      text.innerHTML = winner.name.innerHTML + " winner!"
    }
    eel.readDataFromFontEnd(matches[stage].map(i => [i.teams[0].score.value, i.teams[1].score.value]))();
    stage += 1;
